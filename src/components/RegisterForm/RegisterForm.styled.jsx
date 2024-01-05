@@ -43,13 +43,6 @@ export const Input = styled.input`
   border: 1px solid #000;
   border-radius: 5px;
   font-size: 14px;
-
-  &:hover,
-  &:focus,
-  &:active {
-    outline: none;
-    box-shadow: 0px 0px 4px 2px rgba(255, 255, 255, 0.5);
-  }
 `;
 
 export const Button = styled.button`

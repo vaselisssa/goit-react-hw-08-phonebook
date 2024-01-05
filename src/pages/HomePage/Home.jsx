@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <HomeContainer>
       <HomeTitle>Contacts</HomeTitle>
-      <TiContacts size={'3em'} />
+      <TiContacts size={'4em'} />
     </HomeContainer>
   );
 };

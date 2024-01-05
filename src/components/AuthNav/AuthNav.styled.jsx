@@ -13,7 +13,11 @@ export const Link = styled(NavLink)`
 
   &:hover,
   &:focus {
-    text-shadow: 3px 3px 20px #000, -2px 1px 30px #000;
+    text-shadow: 3px 3px 20px #2a363b, -2px 1px 30px #2a363b;
+  }
+
+  &.active {
+    color: #fff;
   }
 
   @media screen and (max-width: 768px) {
