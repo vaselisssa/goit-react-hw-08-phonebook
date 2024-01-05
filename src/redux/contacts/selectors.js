@@ -9,8 +9,12 @@ export const selectFilteredContacts = createSelector(
   [selectContacts, selectFilter],
   (contacts, filter) => {
     const normalizeFilter = filter.toLowerCase();
-    return contacts.filter(contact =>
-      contact.name.toLowerCase().includes(normalizeFilter)
-    );
+    return contacts
+      .filter(contact => contact.name.toLowerCase().includes(normalizeFilter))
+      .sort((a, b) => {
+        const itemA = a.name.toUpperCase();
+        const itemB = b.name.toUpperCase();
+        return itemA < itemB ? -1 : itemA > itemB ? 1 : 0;
+      });
   }
 );

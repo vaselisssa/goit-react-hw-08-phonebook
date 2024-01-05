@@ -2,8 +2,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { toast } from 'react-toastify';
 import { Formik, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
-import { addContact } from '../../redux/operations';
-import { selectContacts } from '../../redux/selectors';
+import { addContact } from '../../redux/contacts/operations';
+import { selectContacts } from '../../redux/contacts/selectors';
 import { Form, Label, Input, ErrorText, AddButton } from './ContactForm.styled';
 
 const FormError = ({ name }) => {

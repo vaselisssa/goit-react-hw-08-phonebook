@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { FaRegTrashCan } from 'react-icons/fa6';
-import { deleteContact } from '../../redux/operations';
+import { deleteContact } from '../../redux/contacts/operations';
 import { Contact, Text, DeleteButton } from './ContactItem.styled';
 
 const ContactItem = ({ contact }) => {
