@@ -12,9 +12,12 @@ export const UserName = styled.p`
 `;
 
 export const LogoutButton = styled.button`
-  padding: 2px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
   border: 1px solid #8a9ec1;
-  border-radius: 5px;
+  border-radius: 50%;
   font-size: 14px;
   cursor: pointer;
   transition: 0.3s;

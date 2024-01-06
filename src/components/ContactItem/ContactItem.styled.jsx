@@ -16,6 +16,9 @@ export const Text = styled.div`
 `;
 
 export const DeleteButton = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 2px 10px;
   border: 1px solid #8a9ec1;
   border-radius: 5px;
