@@ -1,8 +1,7 @@
 import { useEffect, lazy } from 'react';
 import { useDispatch } from 'react-redux';
-import { Route, Routes } from 'react-router-dom';
-// import { ToastContainer, toast } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
+import { Route, Routes, Navigate } from 'react-router-dom';
+
 import { Layout } from './Layout';
 import { PrivateRoute } from './PrivateRoute';
 import { RestrictedRoute } from './RestrictedRoute';
@@ -23,7 +22,7 @@ const App = () => {
   }, [dispatch]);
 
   return isRefreshing ? (
-    <b>Refreshing user...</b>
+    <div>Refreshing user...</div>
   ) : (
     <Routes>
       <Route path="/" element={<Layout />}>
@@ -37,7 +36,7 @@ const App = () => {
         <Route
           path="/login"
           element={
-            <RestrictedRoute redirectTo="contacts" component={<Login />} />
+            <RestrictedRoute redirectTo="/contacts" component={<Login />} />
           }
         />
         <Route
@@ -47,6 +46,7 @@ const App = () => {
           }
         />
       </Route>
+      <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   );
 };
