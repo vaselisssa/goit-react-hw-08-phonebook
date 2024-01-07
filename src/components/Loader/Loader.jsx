@@ -5,7 +5,7 @@ import { LoaderContainer } from './Loader.styled';
 const Loader = () => {
   return (
     <LoaderContainer>
-      <MagnifyingGlass />
+      <MagnifyingGlass color="#274477" />
     </LoaderContainer>
   );
 };

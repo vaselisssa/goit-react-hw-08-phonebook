@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
   display: flex;
   gap: 12px;
   align-items: center;
+  padding: 12px;
 `;
 
 export const UserName = styled.p`
