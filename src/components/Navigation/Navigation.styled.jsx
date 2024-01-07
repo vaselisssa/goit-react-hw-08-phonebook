@@ -20,6 +20,6 @@ export const Link = styled(NavLink)`
   }
 
   @media screen and (max-width: 768px) {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 `;
